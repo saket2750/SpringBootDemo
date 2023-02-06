@@ -66,6 +66,7 @@ public class DeoartmentServiceImpl implements DepartmentService {
 
 	@Override
 	public Department getByName(String deptName) {
+		System.out.println(deptName);
 		return repo.findByDeptNameIgnoreCase(deptName);
 	}
 
